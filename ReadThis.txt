@@ -1,0 +1,50 @@
+# Blog Management with API
+A simple blog management system with user authentication, post creation,updating and deleting,
+ adding commentes ,updating it or deleting , and email notifications using Laravel.
+
+# Prerequisites
+- PHP 8.x
+- Composer
+- MySQL
+- Laravel 10.x
+
+
+# Installation
+1. Clone the repository:
+   https://github.com/nehalkamal37/blog-task
+
+
+# Navigate to the project folder:
+   cd blog-task
+  
+# Install dependencies:
+ composer install
+
+# Set up the database:
+   - Update `.env` with your database credentials.
+   - Run migrations:
+     php artisan migrate
+    
+# Generate the application key:
+   php artisan key:generate
+  
+#Start the server:
+   php artisan serve
+
+## API Documentation
+API documentation is auto-generated using [Scribe](https://scribe.knuckles.wtf/). You can view the full documentation by visiting:
+http://127.0.0.1:8000/docs
+
+## Features
+- User Registration & Login
+- Post Creation, Update, and Deletion
+- Commenting on Posts and Deletion
+- Email notifications when a new comment is added using Mailgum
+- API Authentication with Sanctum
+-APIDocumentation With Scribe
+
+##finally:I believe everything was implemented as required, except for a small part in the email notification because
+ it was not possible to validate my mailgun account.
+
+
+
